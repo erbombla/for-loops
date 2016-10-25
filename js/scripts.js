@@ -4,9 +4,15 @@ $(document).ready(function() {
     var myNum = parseInt($("input#myNum").val());
     var total = 0
 
-    for (var startNum = 0; total < stopNum; startNum +- 0) {
-      total += myNum;
-      console.log(total)
+    if (isNaN(myNum) === true || isNaN(stopNum) === true) {
+      alert("Please enter a number");
+    }
+    else {
+
+      for (var startNum = 0; total < stopNum; startNum +- 0) {
+        total += myNum;
+        console.log(total)
+      }
     }
     event.preventDefault();
   });

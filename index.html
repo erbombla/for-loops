@@ -10,16 +10,28 @@
   </head>
   <body>
     <div class="container">
-      <form id="userInput">
-        <div class="form-numbers">
-          <label for="stopNum">Number you wish to count to:</label>
-          <input type="number" id="stopNum">
+      <h2>Count Up By</h2>
+        <form id="userInput">
+          <div class="form-numbers">
+            <label for="stopNum">Number you wish to count to:</label>
+            <input type="number" id="stopNum">
 
-          <label for="myNum">Multiple to increase by:</label>
-          <input type="number" id="myNum">
+            <label for="myNum">Multiple to increase by:</label>
+            <input type="number" id="myNum">
+          </div>
+          <br>
+          <button type="submit" class="btn btn-default">Math!
+          </button>
+
+        <div id="result">
+          <div class="panel panel-default">
+            <div class="panel-heading">Result!</div>
+            <div class="panel-body">
+              <!--Display result-->
+            </div>
+          </div>
         </div>
-        <button type="submit" class="btn">Math!</button>
-      </form>
+        </form>
     </div>
   </body>
 </html>
