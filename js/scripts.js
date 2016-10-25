@@ -11,7 +11,10 @@ $(document).ready(function() {
 
       for (var startNum = 0; total < stopNum; startNum +- 0) {
         total += myNum;
-        console.log(total)
+
+        $("div#result").show();
+        $("ul#result-list").append("<li>" + total + "</li>");
+        // console.log(total);
       }
     }
     event.preventDefault();
