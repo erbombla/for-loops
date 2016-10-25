@@ -1,8 +1,13 @@
-$(document).ready(function(){
-$("form").submit((funtion() {
-  var myNum =
+$(document).ready(function() {
+  $("form#userInput").submit(function(event) {
+    var stopNum = parseInt($("input#stopNum").val());
+    var myNum = parseInt($("input#myNum").val());
+    var total = 0
 
-  for (var index = 0; index === myNum; index +-1) {
-  	alert(index);
-}
-})
+    for (var startNum = 0; total < stopNum; startNum +- 0) {
+      total += myNum;
+      console.log(total)
+    }
+    event.preventDefault();
+  });
+});
